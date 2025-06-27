@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, ;
+}
+body{
+    text-align: center;
+
+    
+}
+h1{
+    font-size: 3rem;
+    text-shadow: 0.1px 0.1px;
+    margin-top: 2rem;
+    
+}
+#dice{
+    font-size: 10rem;
+    margin: 5px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation{
+    animation-name: roll;
+}
+@keyframes roll{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+}
+
+/* CSS */
+button {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 10px 36px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: #2c974b;
+}
+
+button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+
+
+button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+#roll-history{
+    width: 100%;
+    height: auto;
+    background-color:transparent;
+    margin: 20px 5px;
+    padding: 10px 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+li{
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+ background-color: #2ea44f;
+ margin: 5px;
+text-align: center;
+ padding: 15px 15px;
+ border-radius: 2rem;
+ font-size: 1.2rem;
+}
+li span{
+    font-size: 2rem;
+}
